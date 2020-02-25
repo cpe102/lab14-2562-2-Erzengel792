@@ -18,4 +18,25 @@ int main(){
 	return 0;
 }
 
-//Write definition of shuffle() here 
+void shuffle(int &w , int &x , int &y , int &z){
+for (int i = 1 ;i<10; i ++){	
+	int r = rand()%3;
+	int n;
+
+	if(r ==  0){
+	   n = w;
+	   w = x;
+	   x = n;
+	}
+	   else if(r == 1){
+	   n = x;
+	   x = y;
+	   y = n;
+	}
+	else{
+	   n = y;
+	   y = z;
+	   z = n;
+}
+}
+}
